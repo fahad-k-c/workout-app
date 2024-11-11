@@ -55,7 +55,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         Awesome Exercises You <br />
         Should Know
       </Typography>
-      <Box position="relative" mb="72px">
+      <Box position="relative" mb="72px" gap={3}>
         <TextField
           height="76px"
           value={search}
@@ -71,35 +71,23 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
               borderRadius: "4px",
             },
             width: {
-              lg: "1170px",
+              lg: "1110px",
               xs: "350px",
             },
             backgroundColor: "white",
             borderRadius: "40px",
           }}
         />
-        <Button
-          className="search-btn"
-          sx={{
-            backgroundColor: "#ff2625",
-            color: "white",
-            textTransform: "none",
-            width: {
-              lg: "175px",
-              xs: "80px",
-            },
-            fontSize: {
-              lg: "20px",
-              xs: "14px",
-            },
-            height: "50px",
-          }}
-          onClick={handleSearch}
-        >
-          Search
-        </Button>
+        <a href="#exercises">
+          <button
+            onClick={handleSearch}
+            className="bg-red-500 text-xl text-white px-6 py-2 rounded-full block mx-auto mt-2"
+          >
+            Search
+          </button>
+        </a>
       </Box>
-      <Box
+      {/* <Box
         sx={{
           position: "relative",
           width: "100%",
@@ -112,7 +100,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           setBodyPart={setBodyPart}
           isBodyParts={false}
         />
-      </Box>
+      </Box> */}
     </Stack>
   );
 };

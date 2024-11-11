@@ -42,11 +42,14 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     setCurrentPage(value);
     window.scrollTo({ top: 1800, behavior: "smooth" });
   };
+  console.log(exercises);
   return (
-    <Box id="exercises" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
-      <Typography variant="h3" mb="46px">
-        Showing Results
-      </Typography>
+    <Box id="exercises" sx={{ mt: { lg: "10px" } }} mt="50px" p="20px">
+      {exercises.length != 0 && (
+        <Typography variant="h3" mb="46px">
+          Showing Results
+        </Typography>
+      )}
       <Stack
         direction="row"
         sx={{ gap: { lg: "110px", xs: "50px" } }}

@@ -7,7 +7,7 @@ import Exercises from "../components/Exercises";
 
 const Home = () => {
   const [exercises, setExercises] = useState([]);
-  const [bodyPart, setBodyPart] = useState("all");
+  const [bodyPart, setBodyPart] = useState("chest");
   console.log(bodyPart);
 
   return (

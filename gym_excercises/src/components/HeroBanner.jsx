@@ -55,7 +55,7 @@ const HeroBanner = () => {
       >
         Exercise
       </Typography>
-      <img src={heroBannerImage} alt="banner" className="hero-banner-img" />
+      <img src={heroBannerImage} alt="banner" className="hero-banner-img " />
     </Box>
   );
 };

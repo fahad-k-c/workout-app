@@ -10,7 +10,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         mt: { lg: "100px", xs: "0" },
       }}
     >
-      <Typography variant="h3" mb="20px" ml="10px">
+      <Typography variant="h4" mb="30px" ml="10px">
         Exercises That Target The Same Muscle Group
       </Typography>
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>
@@ -20,7 +20,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
           <Loader />
         )}
       </Stack>
-      <Typography variant="h3" mb="20px" ml="10px">
+      <Typography variant="h4" mb="30px" mt="50px" ml="10px">
         Exercises That Use The Same Equipments
       </Typography>
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>

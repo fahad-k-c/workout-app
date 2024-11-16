@@ -44,36 +44,36 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   };
   console.log(exercises);
   return (
-    <Box id="exercises" sx={{ mt: { lg: "10px" } }} mt="50px" p="20px">
-      {exercises.length != 0 && (
+    exercises.length !== 0 && (
+      <Box id="exercises" sx={{ mt: { lg: "10px" } }} mt="50px" p="20px">
         <Typography variant="h3" mb="46px">
           Showing Results
         </Typography>
-      )}
-      <Stack
-        direction="row"
-        sx={{ gap: { lg: "110px", xs: "50px" } }}
-        flexWrap="wrap"
-        justifyContent="center"
-      >
-        {currentExercises.map((exercise, index) => (
-          <ExerciseCard key={index} exercise={exercise} />
-        ))}
-      </Stack>
-      <Stack mt="100px" alignItems="center">
-        {exercises.length > exercisePerPage && (
-          <Pagination
-            color="standard"
-            shape="rounded"
-            defaultPage={1}
-            count={Math.ceil(exercises.length / exercisePerPage)}
-            page={currentPage}
-            onChange={paginate}
-            size="large"
-          />
-        )}
-      </Stack>
-    </Box>
+        <Stack
+          direction="row"
+          sx={{ gap: { lg: "110px", xs: "50px" } }}
+          flexWrap="wrap"
+          justifyContent="center"
+        >
+          {currentExercises.map((exercise, index) => (
+            <ExerciseCard key={index} exercise={exercise} />
+          ))}
+        </Stack>
+        <Stack mt="100px" alignItems="center">
+          {exercises.length > exercisePerPage && (
+            <Pagination
+              color="standard"
+              shape="rounded"
+              defaultPage={1}
+              count={Math.ceil(exercises.length / exercisePerPage)}
+              page={currentPage}
+              onChange={paginate}
+              size="large"
+            />
+          )}
+        </Stack>
+      </Box>
+    )
   );
 };
 

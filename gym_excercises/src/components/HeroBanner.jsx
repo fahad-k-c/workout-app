@@ -13,22 +13,19 @@ const HeroBanner = () => {
       p="10px"
     >
       <Typography color="#ff2625" fontWeight="600" fontSize="26px">
-        Fitness Club
+        Unlock Your Strength, One Move at a Time
       </Typography>
       <Typography
-        fontWeight={700}
+        fontWeight="900"
         sx={{
-          fontSize: {
-            lg: "44px",
-            xs: "40px",
-          },
+          fontSize: { lg: "50px", xs: "38px" },
+          lineHeight: { lg: "60px", xs: "45px" },
+          mb: "20px",
         }}
-        mb="23px"
-        letterSpacing={0}
+        color="#333"
       >
-        Sweat,Smile
-        <br />
-        and Repeat..
+        Fitness That Fits <br />
+        <span style={{ color: "#ff2625" }}>Your Life</span>
       </Typography>
       <Typography fontSize="22px" lineHeight="35px" mb="10px">
         Check out the most effective exercises below !!

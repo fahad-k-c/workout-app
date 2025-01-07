@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <Typography variant="h5" mb="20px" mt="0">
+        <Typography variant="h5" mb="20px" mt="0" textAlign="center">
           Sample exercise website to learn about APIs
         </Typography>
       </Stack>

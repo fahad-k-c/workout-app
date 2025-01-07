@@ -12,7 +12,14 @@ const HeroBanner = () => {
       position="relative"
       p="10px"
     >
-      <Typography color="#ff2625" fontWeight="600" fontSize="26px">
+      <Typography
+        color="#ff2625"
+        fontWeight="600"
+        fontSize="26px"
+        sx={{
+          textAlign: { xs: "center", lg: "left" },
+        }}
+      >
         Unlock Your Strength, One Move at a Time
       </Typography>
       <Typography
@@ -21,13 +28,21 @@ const HeroBanner = () => {
           fontSize: { lg: "50px", xs: "38px" },
           lineHeight: { lg: "60px", xs: "45px" },
           mb: "20px",
+          textAlign: { xs: "center", lg: "left" },
         }}
         color="#333"
       >
         Fitness That Fits <br />
         <span style={{ color: "#ff2625" }}>Your Life</span>
       </Typography>
-      <Typography fontSize="22px" lineHeight="35px" mb="10px">
+      <Typography
+        fontSize="22px"
+        lineHeight="35px"
+        mb="10px"
+        sx={{
+          textAlign: { xs: "center", lg: "left" },
+        }}
+      >
         Check out the most effective exercises below !!
       </Typography>
       {/* <Button
